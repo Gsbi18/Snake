@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <style>
+        body {
+            margin: 0pc;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            box-shadow: black 20px 10px 50px;
+        }
+
+        .btn-group button {
+            margin-top: 20px;
+            background-color: black;
+            border: 1px solid red;
+            color: red;
+            padding: 10px 24px;
+            cursor: pointer;
+
+        }
+
+        #ujra {
+            margin-bottom: 20px;
+            background-color: black;
+            border: 1px solid red;
+            color: red;
+            padding: 10px 24px;
+            cursor: pointer;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gabi kígyója</h1>
+    <button id="ujra" onClick="window.location.reload();">Újra</button>
+    <canvas id="game" width="400" height="400"></canvas>
+    <div class="btn-group">
+        <button id=csiga class="gomb" onclick="csiga()">Csiga sebesség</button>
+        <button id=kigyo class="gomb" onclick="kigyo()">Kígyó sebesség</button>
+        <button id=nyul class="gomb" onclick="nyul()">Nyúl sebesség</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
